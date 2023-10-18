@@ -1,0 +1,13 @@
+version: '1.0'
+services:
+  server_a:
+    build: ./server_a
+    ports:
+      - "8000:8000"
+    depends_on:
+      - server_b
+
+  server_b:
+    build: ./server_b
+    ports:
+      - "8001:8001"

@@ -1,0 +1,1 @@
+curl -X POST "http://localhost:8000/send/" -H "Content-Type: application/json" -H "accept: application/json" -d "{\"message\": \"Hello world\"}"
