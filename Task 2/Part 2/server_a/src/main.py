@@ -3,7 +3,7 @@ import requests
 
 app = FastAPI()
 print("Server A started...")
-SERVER_B_URL = "http://server_b:8001/echo/"
+SERVER_B_URL = "0.0.0.0:/echo/"
 
 
 @app.post("/send/")
